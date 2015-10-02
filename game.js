@@ -9,6 +9,10 @@ var two = document.getElementById('two');
 var three = document.getElementById('three');
 var total = document.getElementById('total');
 
+var pickOne = document.getElementById('pickOne');
+var pickTwo = document.getElementById('pickTwo');
+var pickThree = document.getElementById('pickThree');
+
 var questions = ['Does Robert have any tattoos?', 'Does Robert have any pets?', 'Does Robert love camping?'];
 
 var score = 0;
@@ -19,6 +23,9 @@ function q1 () {
 	if (question1.toLowerCase() === 'yes' || question1.toLowerCase() === 'y'){
   	one.innerHTML = 'Good job ' + playerName + ', you got that one right. He has a lot of tattoos.';
   	score ++;
+
+  	pickOne.innerHTML = '<img src = "img-file/hamster-kiss.jpg"width = "200"/>';
+
 	} else if (question1.toLowerCase() === 'no' || question1.toLowerCase() === 'n'){
 
   	one.innerHTML = 'Sorry ' + playerName + ', you got that wrong. Robert has more tattoos than he can count!';
@@ -39,6 +46,10 @@ function q2 () {
 	if (question2.toLowerCase() === 'yes' || question2.toLowerCase() === 'y'){
   	two.innerHTML = 'Good guess ' + playerName + ', he does have a black lab.';
   	score ++;
+
+  	pickTwo.innerHTML = '<img src = "img-file/black-lab-mix.jpg"width = "200"/>';
+
+
 	} else if (question2.toLowerCase() === 'no' || question2.toLowerCase() === 'n'){
 	  two.innerHTML = 'Nope ' + playerName + ', he does have a dog.';
 	}else {
@@ -55,6 +66,11 @@ function q3 () {
 	if (question3.toLowerCase() === "yes" || question3.toLowerCase() === 'y'){
 	   three.innerHTML = 'Correct ' + playerName + ' he will go camping anytime of year and in any weather.';
 	 score ++;
+
+	 pickThree.innerHTML = '<img src = "img-file/15th_century_bell_tent.png"width = "200"/>';
+
+
+
 	} else if (question3.toLowerCase() === "no" || question3.toLowerCase() === 'n'){
 
 	  three.innerHTML = 'Sorry ' + playerName + ', he is happiest when he is in the woods.';
