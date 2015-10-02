@@ -9,10 +9,12 @@ var two = document.getElementById('two');
 var three = document.getElementById('three');
 var total = document.getElementById('total');
 
+var questions = ['Does Robert have any tattoos?', 'Does Robert have any pets?', 'Does Robert love camping?'];
+
 var score = 0;
 
 function q1 () {
-	var question1 = prompt("Does Robert have any tattoos?");
+	var question1 = prompt(questions[0]);
 
 	if (question1.toLowerCase() === 'yes' || question1.toLowerCase() === 'y'){
   	one.innerHTML = 'Good job ' + playerName + ', you got that one right. He has a lot of tattoos.';
@@ -32,7 +34,7 @@ function q1 () {
 
 
 function q2 () {
-	var question2 = prompt('Does Robert have any pets?');
+	var question2 = prompt(questions[1]);
 
 	if (question2.toLowerCase() === 'yes' || question2.toLowerCase() === 'y'){
   	two.innerHTML = 'Good guess ' + playerName + ', he does have a black lab.';
@@ -48,7 +50,7 @@ function q2 () {
 }
 
 function q3 () {
-	var question3 = prompt('Does Robert love camping?');
+	var question3 = prompt(questions[2]);
 
 	if (question3.toLowerCase() === "yes" || question3.toLowerCase() === 'y'){
 	   three.innerHTML = 'Correct ' + playerName + ' he will go camping anytime of year and in any weather.';
