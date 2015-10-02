@@ -24,9 +24,13 @@ function q1 () {
   	one.innerHTML = 'Good job ' + playerName + ', you got that one right. He has a lot of tattoos.';
   	score ++;
 
+  	one.className = ("correct");
+
   	pickOne.innerHTML = '<img src = "img-file/hamster-kiss.jpg"width = "200"/>';
 
 	} else if (question1.toLowerCase() === 'no' || question1.toLowerCase() === 'n'){
+
+		one.className = ("wrong");
 
   	one.innerHTML = 'Sorry ' + playerName + ', you got that wrong. Robert has more tattoos than he can count!';
 	}else {
@@ -47,10 +51,15 @@ function q2 () {
   	two.innerHTML = 'Good guess ' + playerName + ', he does have a black lab.';
   	score ++;
 
+  	two.className = ("correct");
+
   	pickTwo.innerHTML = '<img src = "img-file/black-lab-mix.jpg"width = "200"/>';
 
 
 	} else if (question2.toLowerCase() === 'no' || question2.toLowerCase() === 'n'){
+
+		two.className = ("wrong");
+
 	  two.innerHTML = 'Nope ' + playerName + ', he does have a dog.';
 	}else {
    //Answer not a yes or no, y or n so we will re-send question.
@@ -67,11 +76,15 @@ function q3 () {
 	   three.innerHTML = 'Correct ' + playerName + ' he will go camping anytime of year and in any weather.';
 	 score ++;
 
+	 three.className = ("correct");
+
 	 pickThree.innerHTML = '<img src = "img-file/15th_century_bell_tent.png"width = "200"/>';
 
 
 
 	} else if (question3.toLowerCase() === "no" || question3.toLowerCase() === 'n'){
+
+		three.className = ("wrong");
 
 	  three.innerHTML = 'Sorry ' + playerName + ', he is happiest when he is in the woods.';
 	} else {
