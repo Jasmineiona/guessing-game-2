@@ -14,3 +14,8 @@ document.getElementById. The code worked without this but I assumed it was impor
 10/2/2015
 Robert added a blank style.css file
 and linked it from the index.html
+
+10/2/15
+Jasmine was the driver
+Robert was the navigator
+and we finally finished after a long quest through coding land
